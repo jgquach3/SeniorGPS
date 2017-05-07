@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-  
-  
- 
-<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<script>
+		  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyCgT1gwtKhM1ma0SgTP3Lf5wVVMupEklu4",
     authDomain: "seniorgps-7da0a.firebaseapp.com",
@@ -23,6 +13,17 @@
     messagingSenderId: "675280638130"
   };
   firebase.initializeApp(config);
-</script>
+	</script>
+	
+	<script src="/javascripts/general.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	
+	<title><%= title %></title>
+  </head>
+  
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>
 
 </html>
