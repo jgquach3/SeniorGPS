@@ -20,27 +20,23 @@
   firebase.initializeApp(config);
 	</script>
 
-	<script src="/javascripts/index.js"></script>
-
 	<title><%= title %></title>
+	<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
   </head>
 
   <body>
-    <div class="container">
-      <div class="logo">
-        <img src="images/compass.png">
-        <h1> Find My Senior </h1>
-      </div>
-      <div class="wrapper">
-        <form class="form-signin">
-          <input type="text" class="form-control username-input" id = "user" name="username" placeholder="Username" required="" autofocus="" />
-          <input type="password" class="form-control password-input" id = "pass" name="password" placeholder="Password" required="" style="margin-top: 10px; margin-bottom: 10px"/>
-          <label class="checkbox">
-            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember Me
-          </label>
-          <button class=" login-button btn btn-lg btn-primary btn-block" type="submit" onclick = "login();" style="background-color: #1B2D3F; border-color:#1B2D3F; ">Login</button>
-        </form>
-      </div>
+	
+	<div id="map">map</div>
+    
   </body>
-
+  	<script
+	src="https://maps.googleapis.com/maps/api/
+		js?key=AIzaSyCILZ6BLutcD82KmmP8faJSljQYdzBZmi4">
+    </script>
+		<script src="/javascripts/map.js"></script>
 </html>
